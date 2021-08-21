@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%} HOME{% endblock title%}
+{% block body%}
+
+<div class="container px-0">
+</div>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href = "view5">
+      <img src="{% static '600_x_450_1518024189 (1).webp' %}" style = "display : inline-block ; width : 1500px; height : 300px ; padding-left: 450px;padding-right: 320px;">
+      </a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>the News</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href = "view1">
+      <img src="{% static 'roy-2015-full-movie-hindi-bollyw.jpg' %}"style = "display : inline-block ; width : 1500px; height : 300px ; padding-left: 450px;padding-right: 320px;">
+    </a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>the News</h5>
+       
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href = "view2">
+      <img src="{% static '1596887556_kannada-movies.webp' %}"style = "display : inline-block ; width : 1500px; height : 300px ; padding-left: 450px;padding-right: 320px;">
+      </a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>the News</h5>
+       
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container my-3">
+<h1 class-"my-4"text-centre> Updates </h1>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="{% static 'MEGA-EXCLUSIVE-Hrithik-Roshan-Saif-Ali-Khan-starrer-Vikram-Vedha-remake-to-release-on-September-30-2022-1.jpg' %} " class="d-block w-100" alt="..." >
+
+            
+
+            <div class="card-body">
+              <p class="card-text">MEGA EXCLUSIVE: Hrithik Roshan-Saif Ali Khan starrer Vikram Vedha remake to release on September 30, 2022</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <form method="post" action="view">
+                {% csrf_token %}
+                
+                  <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                </form>
+                 
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+           <img src="{% static 'roy-2015-full-movie-hindi-bollyw.jpg' %}" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Top 10 Bollywood Blogs In India</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <form method="post" action="view1">
+                {% csrf_token %}
+                
+                
+                  <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="{% static '1596887556_kannada-movies.webp' %}" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Top Rated Kannada Movies</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <form method="post" action="view2">
+                {% csrf_token %}
+
+                  <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="{% static 'Alia-Bhatt-.jpg' %}" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Top 5 Most Popular Bollywood Actresses in 2021</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <form method="post" action="view3">
+                {% csrf_token %}
+
+                  <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+             <img src="{% static 'drugs.jpg' %}" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">10 Bollywood Celebrities Addicted To Drugs</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <form method="post" action="view4">
+                {% csrf_token %}
+
+                  <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="{% static '10mostpopularbollywoodstarsonsocialmedia61561895620.webp' %}" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">10 most popular Bollywood stars on social media</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <form method="post" action="view5">
+                {% csrf_token %}
+
+                  <button type="submit" class="btn btn-sm btn-outline-secondary">View</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+    
+{% endblock body%}
